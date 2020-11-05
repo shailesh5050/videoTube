@@ -12,7 +12,7 @@ class VideoDetailFormProvider{
         $createPrivacyInput=$this->createPrivacyInput();
         $createCategotiesInput=$this->createCategotiesInput();
         $createUploadButton=$this->createUploadButton();
-       return  '<form action="processing.php" method="POST"enctype="multipart/form-data">
+       return  '<form action="processing.php" method="POST" enctype="multipart/form-data">
                 '.$fileInput.'
                 '.$fileTitle.'
                 '.$fileDescription.'
