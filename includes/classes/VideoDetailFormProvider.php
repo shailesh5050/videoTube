@@ -69,7 +69,7 @@ class VideoDetailFormProvider{
         <select class="form-control"  name="categoryInput">';
         
         while($row=$query->fetch(PDO::FETCH_ASSOC)){
-            $hmtl.= '<option value='.$row['name'].'>'.$row['name'].'</option> ';
+            $hmtl.= '<option value='.$row['id'].'>'.$row['name'].'</option> ';
         }
         
         '.</select>
