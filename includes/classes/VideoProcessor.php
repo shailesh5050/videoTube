@@ -40,6 +40,7 @@ class VideoProcessor{
             if(!$this->delete($tempFilePath)){
                 return false;
             }
+            //crection plaese!
             if(!$this->generateThumbnails($finalFilePath)){
                 echo "Unable To generate Thumbnails";
                 return false;
