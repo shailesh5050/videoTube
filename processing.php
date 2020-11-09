@@ -21,6 +21,9 @@ $VideoProcessor = new VideoProcessor($con);
 $wasSuccessful = $VideoProcessor->upload($VideoUploadData);
 
 //Check Upload was Successfull
+if($wasSuccessful){
+    
+}
 ?>
 
 <?php include('includes/footer.php'); ?>
