@@ -13,7 +13,7 @@ if(!isset($_POST['uploadButton'])){
             $_POST['descriptionInput'],
             $_POST['privacyInput'],
             $_POST['categoryInput'],
-            "myName"
+            $userLoggedInObj->getUsername()
         );
 
 //Process Video Data

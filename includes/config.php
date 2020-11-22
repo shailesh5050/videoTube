@@ -1,5 +1,6 @@
 <?php
 ob_start();
+session_start();
 
 try{
     $con = new PDO("mysql:dbname=VideoTube;host=localhost","root","");

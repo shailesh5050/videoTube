@@ -1,4 +1,11 @@
-<?php include("includes/config.php") ?>
+<?php 
+include("includes/config.php") ;
+include("includes/classes/User.php");
+require_once('includes/classes/Video.php');
+
+$userLogged = isset($_SESSION['userLogged']) ? $_SESSION['userLogged'] :"";
+$userLoggedInObj = new User($con,$userLogged);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +18,15 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!---Bootstrap--->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!---Video Css----->
+    <link rel="stylesheet" href="assets/css/video.css">
 
     <!----Jquery------->
     <script src="assets/js/jquery.min.js"></script>
     <!----Bootstrap js------->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!----Video js--->
+    <script src="assets/js/video.js"></script>
     <!---Custom js----->
     <script src="assets/js/app.js"></script>
 </head>

@@ -1,4 +1,10 @@
 <?php require_once('includes/header.php') ?>                
-hello Bro
+<?php
+if(isset($_SESSION['userLogged'])){
+    echo "Welcome ".$userLoggedInObj->getName();
+}else{
+    echo "Welcome Guest";
+}
+?>
 <?php require_once('includes/footer.php') ?> 
            
